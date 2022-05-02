@@ -1,0 +1,478 @@
+/* all styles for 5 vizs consolidated here */
+/* segmentation by prefixing everything with viz parent container's class ID */
+
+/* font is already loaded on index.html so no need to load them here again */
+/* font-weight 400 for Regular, 700 for bold */
+/* custom on Google Fonts if you need more font styles and replace on index.html */
+
+
+
+/* --- */
+/* Grade Bar Chart Style */
+/* parent container ID: grade_bar */
+/* --- */
+
+/*set the fill color and border for the bar being hovered over*/
+#grade_bar .bar:hover {
+    fill: #74CAE2;
+    border: #ffffff;
+    border-width: 5px;
+}
+
+/*attributes for the tip to show during a hover over of a bar*/
+div.grade_tooltip {
+    position: absolute;
+    text-align: left;
+    width: 300px;
+    height: 100px;
+    padding: 2px;
+    margin-left: 20px;
+    font-size: 12px;
+
+    line-height: 1.6;
+    padding: 12px;
+    background-color: #2E2E2E;
+    color: #CDCCCC;
+
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    opacity: .9;
+}
+
+/*creates a class to use for Roboto font*/
+#grade_bar option.LibreFranklin {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #2e2e2e;
+    font-weight: 500;
+}
+
+#grade_bar g.annotation.label.showAnnotation {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#grade_bar g.annotation.label.showAnnotation2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#grade_bar g.annotation #showAnnotation2 {
+    transform: translate(50px, 25px);
+    font-weight: 500;
+}
+
+#grade_bar path.domain {
+    stroke: transparent;
+}
+
+
+
+/* --- */
+/* School Type Bar Chart Style */
+/* parent container ID: school_type_bar */
+/* --- */
+
+/*set the fill color and border for the bar being hovered over*/
+#school_type_bar .bar:hover {
+    fill: #74CAE2;
+    border: #ffffff;
+    border-width: 5px;
+}
+
+/*attributes for the tip to show during a hover over of a bar*/
+div.type_tooltip {
+    position: absolute;
+    text-align: left;
+    width: 245px;
+    height: 75px;
+    padding: 2px;
+    margin-left: 20px;
+    font-size: 12px;
+
+    line-height: 1.6;
+    padding: 12px;
+    background-color: #2E2E2E;
+    color: #CDCCCC;
+
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+/*creates a class to use for LibreFranklin font*/
+#school_type_bar option.RobotoRegular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+#school_type_bar g.annotation #showAnnotation2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#school_type_bar path.domain {
+    stroke: transparent;
+}
+
+
+
+/* --- */
+/* Pie Chart Style */
+/* parent container ID: pie_chart */
+/* --- */
+
+#pie_chart .pieTextTitle {
+    font-family: 'Roboto', sans-serif;
+    /* 700 for bold */
+    font-weight: 600;
+    font-size: 14px;
+    color: #474747;
+    text-anchor: middle;
+    line-height: 17px;
+    text-align: center;
+}
+
+#pie_chart .pieText {
+    font-family: 'Roboto', sans-serif;
+    /* 400 for regular */
+    font-weight: 400;
+    font-size: 13px;
+    color: #474747;
+    line-height: normal;
+    text-anchor: middle;
+    position: absolute;
+    text-align: left;
+}
+
+
+
+/* --- */
+/* Map1 Style */
+/* parent container ID: map1 */
+/* --- */
+
+
+#map1 p.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+
+/* --- */
+/* Ethnicity/Gender Bar Chart Style */
+/* parent container ID: eth_gen_bar */
+/* --- */
+
+/*set the attributes for the axix lines*/
+#eth_gen_bar .axis path,
+#eth_gen_bar .axis line {
+    shape-rendering: crispEdges;
+}
+
+/*set the attributes for the axis labels*/
+#eth_gen_bar .axis {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2E2E2E;
+}
+
+#eth_gen_bar .x.axis path {
+    display: none;
+    /*do not want any lines, just the labels on the x axis*/
+}
+
+#eth_gen_bar .y.axis path {
+    display: line;
+    /*a line to go up the y axis*/
+}
+
+/*attributes for the tip to show during a hover over of a bar*/
+div.eth_gen_tooltip {
+    position: absolute;
+    text-align: left;
+    width: 270px;
+    height: 100px;
+    padding: 2px;
+    margin-left: 20px;
+    font-size: 12px;
+
+    line-height: 1.6;
+    padding: 12px;
+    background-color: #2E2E2E;
+    color: #CDCCCC;
+
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+/*format the verticle tick lines to be lightgrey and have an opacity*/
+#eth_gen_bar .grid .tick {
+    stroke: lightgrey;
+    opacity: 0.3;
+}
+
+/*set the width to 0 so the x axis and right border do not appear*/
+#eth_gen_bar .grid path {
+    stroke-width: 0;
+}
+
+/*creates a class to use for font*/
+#eth_gen_bar option.RobotoRegular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+#eth_gen_bar path.domain {
+    stroke: transparent;
+}
+
+/*Set custom characteristics for the two seperate y axis lines*/
+#eth_gen_bar path.yAxisLine {
+    stroke: #2E2E2E;
+    stroke-width: 2px;
+}
+
+#eth_gen_bar path.yAxisLine2 {
+    stroke: #2E2E2E;
+    stroke-width: 2px;
+}
+
+#eth_gen_bar path.yAxisLine3 {
+    stroke: #2E2E2E;
+    stroke-width: 1px;
+    stroke-dasharray: 1;
+}
+
+
+
+/* --- */
+/* Map2 Style */
+/* parent container ID: map2 */
+/* --- */
+
+/*Set up hover over characteristics */
+div.map2_tooltip {
+    position: absolute;
+    text-align: left;
+    width: 400px;
+    height: 130px;
+    padding: 2px;
+    margin-left: 20px;
+    font: 14px sans-serif;
+    line-height: 1.2;
+    padding: 12px;
+    background-color: #2E2E2E;
+    color: #CDCCCC;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#map2 p.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+
+#map2 .wrapper {
+
+  height: 100%;
+    width: auto;
+    /* padding-top: 0px; */
+}
+
+#map2 .legendItem input[id="oneHundred"]+label {
+    background: #046B99;
+}
+
+#map2 .legendItem input[id="seventyFive"]+label {
+    background-color: #0883A0;
+}
+
+#map2 .legendItem input[id="fifty"]+label {
+    background: #099ACC;
+}
+
+#map2 .legendItem input[id="twentyFive"]+label {
+    background: #2EB4E7;
+}
+
+#map2 .legendItem input[id="zero"]+label {
+    background: #74cae2;
+}
+
+#map2 .legendItem input[id="none"]+label {
+    background: #C1E7F2;
+}
+
+#map2 .legendItem input[id="missing"]+label {
+    background: #909090;
+    position: absolute;
+}
+
+#map2 .legendItem input[id="white"] {
+    cursor: default;
+    background: white;
+    color: white;
+}
+
+#map2 input[type=radio] {
+    cursor: pointer;
+    height: 10px;
+    width: 50px;
+}
+
+#map2 ul {
+    width: 50%;
+    margin: auto;
+}
+
+#map2 .legendItem {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+}
+
+#map2 .legendItem li {
+    float: left;
+    width: 50px;
+    height: 10px;
+    position: relative;
+    margin-left: 2px;
+}
+
+#map2 .legendItem label,
+#map2 .legendItem input {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: bottom;
+
+}
+
+#map2 .legendItem input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+    display: block;
+    margin: 0 auto;
+}
+
+#map2 .legendItem input[class*="hasSelector"]+label {
+    opacity: .1;
+}
+
+#map2 .legendItem input[class*="highlightButton"]+label {
+    /*border:1px solid #2e2e2e;*/
+    opacity: 1;
+}
+
+#map2 .zoomButton {
+    cursor: pointer;
+}
+
+
+#map2 .legendItem label {
+    padding-top: 1px;
+}
+
+#map2 .legendItem input[class*="legendButton"]:hover {
+    border: 1px solid #CCC;
+}
+
+#map2 .legendButton{
+    cursor: pointer;
+}
+
+#map2 .legendButton.hasSelector.highlightButton{
+    opacity: 1;
+}
+
+#map2 .legendButton.hasSelector{
+    opacity: .1;
+}
+
+#map2 .legendButtonText{
+    opacity: 1;
+}
+
+
+#map2 .legendButtonText.hasSelector{
+    opacity: .1;
+}
+#map2 .legendButtonText.highlightButton{
+    opacity: 1;
+}
+
+
+
+
+/*Set up the triangle that is used to indicate which legend item is selected */
+#map2 .triangle {
+   display: none;
+}
+
+#map2 .triangle.highlightButton {
+    display: inline-block;
+}
+
+
+#map2 .background {
+    fill: none;
+    pointer-events: all;
+}
+
+#map2 #states {
+    fill: none;
+}
+
+#map2 #states .active {
+    fill: none;
+}
+
+#map2 #state-borders {
+    fill: none;
+    color: none;
+    stroke: #22222a;
+    stroke-width: 1.5px;
+}
+
+@media screen and (min-width: 100.000em) {
+  #map2 #state-borders {
+  stroke-width: 2px;
+  }
+}
+
+#map2 label {
+    width: 50px;
+    height: 10px;
+    color: white;
+}
