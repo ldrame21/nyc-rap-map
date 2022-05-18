@@ -152,14 +152,14 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 1.063em;
   letter-spacing: .05em;
-  color: #656569;
+  color: #0d0d0d;
   -webkit-tap-highlight-color: transparent;
   transition: background-color 1s ease;
-  background: #624163;
+  background: #0d0d0d;
 }
 
 div.bigger, h2 {
-  color: #624163;
+  color: #0d0d0d;
 }
 
 @media (max-width:1050px) {
@@ -306,7 +306,7 @@ div.links a {
 }
 
 div.links a:hover {
-  color: #624163
+  color: #0d0d0d
 }
 
 div.links:last-child {
@@ -827,7 +827,7 @@ section.title-card .wrap {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   section.title-card .wrap {
-    background-image: url("../img/background_ada.png");
+    background-image: url("../img/nyc1.jpg");
   }
 
 }
@@ -1223,7 +1223,7 @@ article sup a {
 /* colours */
 
 .color-dark {
-  background-color: #624163;
+  background-color: #0d0d0d;
 }
 
 .color-white {
