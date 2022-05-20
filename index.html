@@ -242,17 +242,18 @@
 
     </article>
 
-    <div class="map-transition wrap" >
+    <div class="map-transition wrap">
       <div class="map_containers">
         <!-- Title above map -->
         <p class="title">Latent Dirichlet Allocation analysis for all lyrics produced by NYC artists</p>
-        <object type="text/html" data="interactive/lda.html" align="left" width=1230, height=800 style="background-color: #fafafa"></object>
+        <object type="text/html" data="interactive/lda.html" align="left" width=1230, height=800
+          style="background-color: #fafafa"></object>
       </div>
     </div>
     <br>
     <br>
     <br>
-    <article class="narrative-wrap"style="margin-top: 200px;">
+    <article class="narrative-wrap" style="margin-top: 200px;">
 
       <div class="narrative pure-g">
         <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24">
@@ -274,7 +275,7 @@
           <ul>
             <li>
               <h4>The daily routine</h4>
-              Various topics of the rapper's life are clustered, from the family, to the neighborhood.
+              In which various topics of the rapper's life are clustered, from family, to neighborhood.
             </li>
             <li>
               <h4>Music, the main income of the rapper</h4>
@@ -283,7 +284,7 @@
               for him and his entourage (management, branding, production, logistics, ...)
             </li>
             <li>
-            <h4>The love of the community, the neighborhood</h4>
+              <h4>The love of the community, the neighborhood</h4>
               The MC is the first witness of the living condition of his community. He is also considered as a model of
               success, and can sometimes take the cut of benefactor of his neighborhood. He represents both a geographic
               space and often fringed communities in that seeks pride in rap competition.
@@ -291,13 +292,15 @@
 
             <li>
               <h4>The danger of the lifestyle/day routine</h4>
-              To give you an idea, the violent crime rate (murder, raper, assault) in the Bronx is approximately 3 times
-              higher than the average rate in New York. The rappers place themselves as field journalists, often
-              witnesses of shocking events, and sometimes even the protagonists of this violence, reporting what they
-              live/see in the texts. (<a href="https://www.neighborhoodscout.com/ny/bronx/crime#data">ref</a>)
+              As a reference, we can look at the important crime rate (murder, rape, assault, etc..) recorded in the
+              Bronx and compare it to the average rate of the city of New York. The rate of Bronx is approximately 3
+              times higher. The rappers experiencing it on a daily basis become field journalists, often witnesses of
+              shocking events, and sometimes even the protagonists of this violence. Their songs and lyrics can often be
+              understood as reports of what they live and see and become an important source of information.
+              (<a href="https://www.neighborhoodscout.com/ny/bronx/crime#data">ref</a>)
             </li>
 
-            </ul>
+          </ul>
 
           Now that we have succeeded in identifying a range of topics discussed in rap, we can analyze geographically
           the variations of emotions applied to New York City neighborhoods.
@@ -316,49 +319,14 @@
           <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-12-24 pure-u-xl-10-24">
 
           </div>
-          <div class="acorn"><img src="assets/img/vinyl.png" ></div>
+          <div class="acorn"><img src="assets/img/vinyl.png"></div>
           <h3>
-            Ok! but what do these men have so much to talk about?
+            Methodology
           </h3>
           <p>
-            In order to find out, we trained a machine learning model with data coming from social media, namely Reddit,
-            and tried to see how accurately this model can classify a sentence as mysoginistic or not. When testing it
-            on Quotebank's subdatasets (Talking about women or metoo), we get a very low ratio of mysoginistic quotes to
-            total quotes for both, with a slightly higher ratio when metoo is the subject.
-          </p>
-          <p>
-            What we had actually created was a detector of extremely sexist and rude quotes, since a couple of months
-            would not be enough for us to perfect the model and make it detect subtle sexism, as this can be a project
-            by itself. So it proves itself a little useful if we want to extract some sexist quotes on the fly as
-            examples, such as:
-
-          <h4>"That's all they do is bitch, moan, and complain... What happened to you today, sweetheart, did they
-            not chill your rosé? Was the trolley not running down at the mall?" - Bill Burr</h4>
-          <h4>"Feminism causes women to hate men, kill their children, become witches, whores & lesbians." - Alex
-            Hall</h4>
-          <h4>"I am a rapist now. I would never rape you because you do not deserve it… slut!" - Jair Bolsonaro</h4>
-          </p>
-          <h3>Running a sentiment analysis...</h3>
-          <p>
-            Analysing the variation of sentiment for different categories may lead to understanding the reaction the
-            certain groups of people to the metoo movement, and how the overall sentiment around women changed. The
-            sentiment analysis was run on both subdatasets, and we separated quotes by the speakers' gender and age. We
-            also extracted the average sentiment around 2 key dates in the movement, the 15<sup>th</sup> of October
-            (Date of initial tweet) and the 8<sup>th</sup> of March (women’s day).
-          </p>
-
-          <h4>
-            Young people are more positive than old people.
-          </h4>
-          <h4>
-            The subject of MeToo brings down the sentiment from clearly positive to neutral and slightly negative.
-          </h4>
-          <h4>
-            Middle aged and old men's sentiment pre (2015) and post (2019) metoo did not change. All women and younger
-            men became more positive.
-          </h4>
-          <p>
-            All the claims above are statistically significant, after analysing them during our work.
+            Joining both the topic approach and the time approach, we propose the following heat map to get a better
+            sense of how artists depicted the city throughout the last 4 decades. This way one can browse throughout the
+            decades to see the evolution of the shared sentiment concerning New York’s boroughs.
           </p>
         </div>
 
@@ -382,63 +350,16 @@
         <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24">
         </div>
         <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
-          <!-- <p>
+           <p>
             The main point behind this plot is to see if there are any statistical difference between the years 2015
-            (pre metoo) and 2019 (post metoo).
-          </p> -->
+          </p>
         </div>
         <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24">
         </div>
       </div>
     </article>
 
-    <article class="narrative-wrap">
-      <div class="narrative pure-g">
-
-        <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
-
-        <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
-          <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-12-24 pure-u-xl-10-24">
-
-          </div>
-          <div class="acorn"><img src="assets/img/vinyl.png" alt="MeToo motif"></div>
-          <h3>
-            What words appear the most in the quotes?
-          </h3>
-          <p>
-            Showed below are 3 wordclouds generated in the subdataset where the subject revolves around women.
-          </p>
-          <p>
-            Firstly, 2015, when MeToo did not exist yet. The main words we see are related to family, and "sexual
-            assault" and "domestic violence" appear in small.
-          </p>
-          <div align='middle'><img src="assets/img/2015_12.png" alt="Pre wordcloud"></div>
-          <p>
-            Then, 2017, the year the movement was created. We see new terms appearing (e.g. "sexual harrassment",
-            "sexual misconnduct"...). It is expected for such words and bigrams to blow up since we are at the peak at
-            the movement and any other result would have been unexpected.
-          </p>
-          <div align='middle'><img src="assets/img/2017_11.png" alt="During wordcloud"></div>
-          <p>
-            Finally, 2019, when the movement is supposed to be past its peak. The main words we see go back
-            family-related ones, but now keywords related to MeToo are more existent than in 2015. It is a great result
-            to see, because even though the main subject around women is back to where it was, we can see some influence
-            that the movement had on the content of the quotes after 2017.
-          </p>
-          <div align='middle'><img src="assets/img/2019_03.png" alt="Post wordcloud"></div>
-          <p>
-            Our findings coincide with an article made by the Economist, which can be found <a
-              href="https://www.economist.com/graphic-detail/2018/10/15/after-a-year-of-metoo-american-opinion-has-shifted-against-victims">here</a>.
-            In the image below, the graph on the right shows how the mention of "sexual harrasment" peaked in news
-            articles bewteen 2017 and 2018, and then the number of mentions dropped, but not to the same level as
-            pre-2017
-          </p>
-          <div align='middle'><img src="assets/img/metoo_tweets.png" alt="Post wordcloud"></div>
-        </div>
-
-        <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
-      </div>
-    </article>
+  
 
     <article class="narrative-wrap">
       <div class="narrative pure-g">
@@ -454,13 +375,7 @@
             What topics appear the most in the quotes?
           </h3>
           <p>
-            With the help of NLP libraries, we extracted the main topics present in Quotebank, when the subject revolves
-            around women. For this, tokenization and lemmatisation have been applied and we took into account both
-            monograms and bigrams only. Some topics related to MeToo appear (e.g. Harvey Wienstein, sexual abuse,
-            marriage equality...). This is indeed promising, and shows a certain influence of the movement. But it is
-            not a statistically strong claim to say that MeToo had such a big impact that it became a full topic in of
-            itself. The closest our clustering has come to is in cluster 8, where for &lambda = 0.85, we can infer a
-            topic centered around men-women relations, where men can sometimes go too far.
+            red around men-women relations, where men can sometimes go too far.
           </p>
         </div>
 
