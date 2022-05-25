@@ -818,7 +818,7 @@ section.title-card .wrap {
   position: relative;
   height: calc(90vh);
   max-height: 9000px;
-  /* background-image: url("../img/student-hero.jpg"); */
+  background-image: url("../img/nyc1.jpg");
   background-size: cover;
   background-position: auto;
 }
